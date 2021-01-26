@@ -1,1 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+   </head>
+   <body>
+  
+    <header class="main-header">
+       <nav>
+        <a href="index.html">
+          <img src="img/nerds-logo.svg" width="159" height="65" alt="Логотип студии "Нёрдс">
+         </a>
+           <ul>
 
+             <li><a href="blank.html">Студия</a></li>
+             <li><a href="blank.html">Клиенты</a></li>
+             <li><a href="catalog.html">Магазин</a></li>
+             <li><a href="blank.html">Контакты</a></li>
+
+           </ul>
+         <a href="blank.html">Корзина</a>
+       </nav>
+    </header>
+
+    <main>
+        <h1>Магазин готовых шаблонов</h1>
+        
+        <!-- Здесь будет блок стоимости -->
+
+        <form  method="get" action="https://echo.htmlacademy.ru">
+         <fieldset>
+           <legend>Сетка:</legend>
+           <ul>
+
+             <li>
+               <input class="grid-select__input"  type="radio" name="grid-select" id="option-adaptive-grid" checked>
+               <label for="option-adaptive-grid">Адаптивная</label>
+             </li>
+
+             <li>
+               <input class="grid-select__input"  type="radio" name="grid-select" id="option-fixed-grid">
+               <label for="option-fixed-grid">Фиксированная</label>
+             </li>
+
+             <li>
+               <input class="grid-select__input"  type="radio" name="grid-select" id="option-fluid-grid">
+               <label for="option-fluid-grid">Резиновая</label>
+             </li>
+
+           </ul>
+         </fieldset>
+
+        <fieldset>
+
+          <legend>Особенности:</legend>
+          <ul>
+
+            <li> 
+              <input class="features-select__input"  type="checkbox" name="features-select" id="option-slider" checked>
+              <label for="option-slider">Слайдер</label>
+            </li>
+
+            <li>
+              <input class="features-select__input"  type="checkbox" name="features-select" id="option-advantages-block">
+              <label for="option-advantages-block">Блок преимуществ</label>
+            </li>
+
+            <li>
+              <input class="features-select__input" type="checkbox" name="features-select" id="option-news" checked>
+              <label for="option-news">Новости</label>
+            </li>
+
+            <li>
+              <input class="features-select__input"  type="checkbox" name="features-select" id="option-gallery">
+              <label for="option-gallery">Галерея</label>
+            </li>
+
+            
+            <li>
+              <input class="features-select__input"  type="checkbox" name="features-select" id="option-busket">
+              <label for="option-busket">Корзина</label>
+            </li>
+
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+
+      <section> 
+
+        <h2>Сортировать:</h2>
+
+          <ul>
+
+            <li>
+              <a href="#">По цене</a>
+            </li>
+            <li>
+              <a href="#">По типу</a>
+            </li>
+            <li>
+              <a href="#">По названию</a>
+            </li>
+
+          </ul>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Список проектов</h2>
+        <ul>
+
+          <li>
+            <a href="product.html">
+               <h3>Sedona</h3>
+               <p>
+                 <img src="https://via.placeholder.com/150x100" alt="">
+               </p>
+           </a>
+              <p>Информационный сайт для туристов</p>
+              <button class="btn" type="submit">9 900 руб.</button>
+         </li>
+          
+         <li>
+            <a href="product.html">
+             <h2>Pink APP</h2>
+              <p>
+               <img src="https://via.placeholder.com/150x100" alt="">
+              </p>
+            </a>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <button class="btn" type="submit">9 900 руб.</button>
+          </li>
+
+          <li>
+            <a href="product.html">
+             <h2>Barbershop</h2>
+              <p>
+               <img src="https://via.placeholder.com/150x100" alt="">
+              </p>
+            </a>
+              <p>Сайт салоны красоты. Для мужчин, да.</p>
+              <button class="btn" type="submit">9 900 руб.</button>
+          </li>
+
+          <li>
+            <a href="product.html">
+             <h2>Mishka</h2>
+              <p>
+               <img src="https://via.placeholder.com/150x100" alt="">
+              </p>
+            </a>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <button class="btn" type="submit">9 900 руб.</button>
+          </li>
+
+          <li>
+            <a href="product.html">
+             <h2>A Plus</h2>
+              <p>
+               <img src="https://via.placeholder.com/150x100" alt="">
+              </p>
+            </a>
+              <p>Лендинг курсов повышения квалификации</p>
+              <button class="btn" type="submit">9 900 руб.</button>
+          </li>
+
+          <li>
+            <a href="product.html">
+             <h2>КВАСТ</h2>
+              <p>
+               <img src="https://via.placeholder.com/150x100" alt="">
+              </p>
+            </a>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <button class="btn" type="submit">9 900 руб.</button>
+          </li>
+
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">1</a>
+          </li>
+
+          <li>
+            <a>2</a>
+          </li>
+
+          <li>
+            <a href="#">3</a>
+          </li>
+
+          <li>
+            <a href="#">4</a>
+          </li>
+
+          <li> 
+            <a href="#next">Следующая> </a>
+          </li>
+
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+        <section>
+          
+          <h2 class="visually-hidden> Как к нам добраться </h2>
+
+               <!-- Здесь будет карта -->
+                  
+            <ul>
+
+
+              <li>
+                <a href="#">Вконтакте</a>
+              </li>
+
+              <li>
+                <a href="#">Фейсбук</a>
+              </li>
+
+              <li>
+                <a href="#">Инстаграм</a>
+              </li>
+
+
+            </ul>
+            
+        
+            <div>
+              <p>Давайте дружить, это выгодно!</p>
+              <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+        </section>
+      </footer>
+</body>
+</html>
