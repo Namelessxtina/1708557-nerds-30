@@ -76,6 +76,9 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.page {
+  height: 100% ;
+}
 
 /* Main navigation */
 
