@@ -46,6 +46,10 @@
   font-weight: 400;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 a {
   text-decoration: none;
@@ -55,16 +59,12 @@ img {
   max-width: 100%;
   height: auto;
 }
-.page {
-  height: 100% ;
-}
 
 .container {
   margin: 0 auto;
   padding: 0;
   max-width: 1160px;
 }
-
 
 .visually-hidden {
   position: absolute;
@@ -76,16 +76,8 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.page-body {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: center;
-  margin: 0 auto;
-  padding: 0;
-  min-height: 100px;
-  position: relative;
-}
+
+/* Main navigation */
 
 .main-header {
   margin: 0;
@@ -98,35 +90,20 @@ img {
 .main-navigation {
   display: flex;
   text-transform: uppercase;
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 16px;
+  line-height: 30px;
+  background-color: transparent;
 }
+
 .main-header-logo {
   width: 160px;
   height: 66px;
-  display: block;
 }
 
 .main-header-logo:focus{
   opacity: 0.2;
-}
-
-.basket-navigation-link {
-  color: var(--basic-black);
-  display: block;
-  width: 160px;
-  text-align: right;
-}
-
-.basket-navigation-icon {
-  margin-right: 21px;
-}
-
-.site-navigation-wrapper {
-  display: flex;
-  align-items: center;
-  margin: 0px 0px 0px 202px;
 }
 
 .site-navigation {
@@ -134,9 +111,6 @@ img {
   padding: 0;
   min-height: 31px;
   list-style: none;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .nav-item-logo {
@@ -245,9 +219,9 @@ img {
   border-radius: 50%
 }
 
-.slide-1:checked~.slider-controls .slider-controls-slide-1::before,
-.slide-2:checked~.slider-controls .slider-controls-slide-2::before,
-.slide-3:checked~.slider-controls .slider-controls-slide-3::before {
+.slide-one:checked~.slider-controls .slider-controls-slide-1::before,
+.slide-two:checked~.slider-controls .slider-controls-slide-2::before,
+.slide-three:checked~.slider-controls .slider-controls-slide-3::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -261,13 +235,13 @@ img {
   border-radius: 50%;
 }
 
-.slide-1:checked~.slides .slide:nth-child(1),
-.slide-2:checked~.slides .slide:nth-child(2),
-.slide-3:checked~.slides .slide:nth-child(3) {
+.slide-one:checked~.slides .slide:nth-child(1),
+.slide-two:checked~.slides .slide:nth-child(2),
+.slide-three:checked~.slides .slide:nth-child(3) {
   display: block;
 }
 
-.slide-1:checked~.slides .slide:nth-child(1) {
+.slide-two:checked~.slides .slide:nth-child(1) {
   background-image: url(../img/nerds_index_slide1.png);
   background-repeat: no-repeat;
   background-position: 99% 0;
@@ -279,7 +253,7 @@ img {
   background-position: 99% 0;
 }
 
-.slide-3:checked~.slides .slide:nth-child(3){
+.slide-three:checked~.slides .slide:nth-child(3){
   background-image: url(../img/nerds_index_slide3.png);
   background-repeat: no-repeat;
   background-position: 99% 0;
@@ -318,15 +292,42 @@ img {
   display: inline-flex;
   vertical-align: center;
 }
+/* Сategories */
+
+.categories-slogan{
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin: 18px 0 15px 0;
+}
+
+.categories-slogan-item {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-dark-gray);
+  width: 260px;
+}
+
+.categories {
+  margin-bottom: 39px;
+  border-bottom: 2px solid #EEEEEE;
+}
+
+.categories-list {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  gap: 100px;
+  margin: 0;
+  padding: 73px 0px 80px 0px;
+}
 /* Description */
 
 .description {
   text-align: center;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
   padding-bottom: 51px;
-  border-bottom: 2px solid #EEEEEE
+  border-bottom: 2px solid #EEEEEE;
 }
 
 .description-statistics-item {
@@ -395,8 +396,6 @@ img {
   top: 12px;
 }
 .description-statistics {
-  display: flex;
-  flex-direction: column-reverse;
   margin-top: 26px;
 }
 .statistics-list-item {
@@ -432,7 +431,6 @@ img {
 }
 
 .partner-link {
-  display: block;
   opacity: .2;
 }
 
@@ -485,11 +483,9 @@ img {
 }
 
 .footer-contacts {
-  display: flex;
   text-align: center;
   padding: 0;
   margin: 0;
-  flex-wrap: wrap;
 }
 
 
@@ -543,8 +539,6 @@ img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
 }
 
 .footer-contacts-list-icon {
