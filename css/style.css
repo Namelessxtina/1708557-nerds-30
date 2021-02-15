@@ -103,10 +103,22 @@ img {
 .main-header-logo {
   width: 160px;
   height: 66px;
+  display: block;
 }
 
 .main-header-logo:focus{
   opacity: 0.2;
+}
+
+.cart {
+  color: var(--basic-black);
+  display: block;
+  width: 160px;
+  text-align: right;
+}
+
+.cart-icon {
+  margin-right: 21px;
 }
 
 .site-navigation {
@@ -128,7 +140,7 @@ img {
   margin-left: 4px;
 }
 
-.nav-item-link, .basket-navigation-link{
+.nav-item-link, .cart{
   font-size: 16px;
   line-height: 30px;
   color: var( --basic-black);
@@ -136,12 +148,12 @@ img {
   margin-top: 19px;
 }
 
-.nav-item-link:hover, .basket-navigation-link:hover,
-.nav-item-link:focus, .basket-navigation-link:focus {
+.nav-item-link:hover, .cart:hover,
+.nav-item-link:focus, .cart:focus {
   color: var(--basic-red)
 }
 
-.nav-item-link:active, .basket-navigation-link:active {
+.nav-item-link:active, .cart:active {
   color: var(--basic-soft-gray);
 }
 
@@ -245,19 +257,19 @@ img {
 }
 
 .slide-two:checked~.slides .slide:nth-child(1) {
-  background-image: url(../img/nerds_index_slide1.png);
+  background-image: url(..img/nerds-slide1.png);
   background-repeat: no-repeat;
   background-position: 99% 0;
 }
 
 .slide-2:checked~.slides .slide:nth-child(2) {
-  background-image: url(../img/nerds_index_slide2.png);
+  background-image: url(../img/nerds-slide2.png);
   background-repeat: no-repeat;
   background-position: 99% 0;
 }
 
 .slide-three:checked~.slides .slide:nth-child(3){
-  background-image: url(../img/nerds_index_slide3.png);
+  background-image: url(../img/nerds-slide3.png);
   background-repeat: no-repeat;
   background-position: 99% 0;
 }
@@ -401,6 +413,11 @@ img {
 .description-statistics {
   margin-top: 26px;
 }
+.statistics-list {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 26px;
+}
 .statistics-list-item {
   color: var(--basic-dark-gray);
   line-height: 18px;
@@ -486,41 +503,11 @@ img {
 }
 
 .footer-contacts {
+  display: flex;
   text-align: center;
   padding: 0;
   margin: 0;
-}
-
-
-.footer-feedback-header {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding-right: 26px;
-}
-
-.footer-feedback-description {
-  line-height: 18px;
-  color: var(--basic-light-gray);
-  margin: 21px 0 0 36px;
-  width: 203px;
-}
-
-.footer-feedback-description-tel {
-  width: 210px;
-}
-
-.button-feedback {
-  color: var(--basic-white);
-  text-transform: uppercase;
-  font-weight: 500;
-  background: var(--basic-red);
-  border-radius: 3px;
-  padding: 13px 45px;
-  display: inline-flex;
-  vertical-align: center;
-  margin-top: 18px;
+  flex-wrap: wrap;
 }
 
 .footer-header-stock {
