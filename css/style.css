@@ -82,7 +82,7 @@ img {
 
 /* Main navigation */
 
-.main-header {
+.main-header .inner-page {
   margin: 0;
   min-width: 1200px;
   padding-top: 48px;
@@ -532,4 +532,139 @@ img {
 
 .footer-contacts-list-icon {
   padding: 30px;
+}
+/* Catalog */
+
+.inner-page {
+  color: var(--basic-black);
+  background-color: var(--basic-extra-light);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+.catalog-header {
+  font-size: 55px;
+  line-height: 55px;
+}
+.filter-sort {
+  list-style: none;
+}
+.filter-sort-item {
+  margin-right: 23px;
+}
+.filter-sort-list{
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+/*Filter*/
+.filter-header {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.filter-header-features {
+  margin-bottom: 16px;
+}
+.fielsed-grid {
+  margin-bottom: 22px;
+}
+.filter-item-grid label,
+.filter-item-features label {
+   position: relative;
+   cursor: pointer;
+   user-select: none;
+}
+.filter-item {
+  padding: 0 0 8px 0;
+  margin: 0px;
+}
+.filter-item-features label {
+  padding-left: 36px;
+}
+
+.filter-item-grid label {
+  padding-left: 36px;
+}
+
+.filter-item-grid {
+  margin-bottom: 14px;
+}
+/* Catalog */
+
+.catalog-list {
+  list-style: none;
+}
+.catalog-item {
+  width: 220px;
+  min-height: 285px;
+  min-height: 285px;
+  width: 360px;
+}
+.catalog-header {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  margin: 28px 0 11px 0;
+}
+
+.catalog-header:hover, .catalog-header:focus {
+  color: var(--basic-red);
+}
+
+.catalog-header:active {
+  color: var(--basic-black);
+}
+.card-description-details {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-light-gray);
+  text-align: center;
+  width: 255px;
+  margin: 10px 0 46px 50px;
+}
+
+.card-price {
+  color: var(--basic-white);
+  text-transform: uppercase;
+  font-weight: 500;
+  background: var(--basic-red);
+  border-radius: 3px;
+  padding: 15px 74px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.card-price:hover, .card-price:focus {
+  background-color: var(--basic-soft-red);
+}
+
+.card-price:active {
+  background-color: var(--basic-dark-red);
+}
+
+fieldset {
+  border: 0 none;
+}
+/*Pagination*/
+
+.pagination {
+  display: flex;
+  margin-top: 46px;
+}
+.pg-active, .pagination-item {
+  margin-right: 11px;
+}
+
+.pagination-item:hover, .next:hover, 
+.pagination-item:focus, .next:focus {
+  background-color: var(--basic-mono-gray);
+}
+
+.pagination-item:active, .next:active{
+  background-color: var(--basic-abdel-gray);
+  color: -var(--basic-extra-gray);
 }
