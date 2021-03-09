@@ -52,42 +52,44 @@
       </div> 
       </header>
       <main>
-        <p class="catalog-header">Магазин готовых шаблонов</p>
+      <p class="catalog-header">Магазин готовых шаблонов</p>
         <h1 class="visually-hidden">Каталог</h1>
         <div class="page-catalog container">
           <section class="catalog-filter">
-          <h2 class="visually-hidden">Фильтр товаров</h2>
-          <form action="https://echo.htmlacademy.ru/" method="GET">
-          <fieldset class="fieldset">
-            <legend class="features-title">Стоимость:</legend>
-            <div class="range-filter">
-            <div class="range-controls">
-            <div class="scale">
-            <div class="bar" style="
-              width: 70%;
-              margin-left: 2%">
-            </div>
-            </div>
-            <div class="toggle toggle-min" style="
-             left: 7%">
-            </div>
-            <div class="toggle toggle-max" style="
-              left: 61%">
-            </div>
-            </div>
-            <div class="price-controls">
-            <label class="min-price">
-               от <input type="text" name="min-price" value="0">
-            </label>
-            <label class="max-price">
-               до <input type="text" name="max-price" value="15000">
-            </label>
-            </div>
-            </div>
+           <h2 class="visually-hidden">Фильтр товаров</h2>
+           <form action="https://echo.htmlacademy.ru/" method="GET">
+            <fieldset class="fieldset">
+              <legend class="features-title">Стоимость:</legend>
+              <div class="range-filter">
+               <div class="range-controls">
+                 <div class="scale">
+                   <div class="bar" style="
+                    width: 70%;
+                    margin-left: 2%">
+                   </div>
+                 </div>
+                 <div class="toggle toggle-min" style="
+                   left: 7%">
+                 </div>
+                 <div class="toggle toggle-max" style="
+                   left: 61%">
+                 </div>
+               </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="text" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до <input type="text" name="max-price" value="15000">
+                  </label>
+               </div>
+              </div>
             </fieldset>
             <fieldset class="fieldset grid">
               <legend class="features-title filter-grid">Сетка</legend>
+
               <ul class="filter-item">
+
                 <li class="filter-item-grid">
                   <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="adaptive" id="adaptive" checked>
                   <label class="filter-label" for="adaptive">Адаптивная</label>
@@ -100,13 +102,16 @@
                   <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="rubber" id="rubber">
                   <label class="filter-label" for="rubber">Резиновая</label>
                 </li>
+
               </ul>
             </fieldset>
             <fieldset class="fieldset">
               <legend class="features-title header-features">Особенности</legend>
+
               <ul class="filter-item">
+
                 <li class="filter-item-features">
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider" id="here_slider">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider" id="here_slider" checked>
                   <label class="filter-label filter-label-features" for="here_slider">Слайдер</label>
                 </li>
                 <li class="filter-item-features">
@@ -114,7 +119,7 @@
                   <label class="filter-label filter-label-features" for="here_features">Блок преимуществ</label>
                 </li>
                 <li class="filter-item-features">
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news" id="here_news">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news" id="here_news" checked>
                   <label class="filter-label filter-label-features" for="here_news">Новости</label>
                 </li>
                 <li class="filter-item-features">
@@ -125,141 +130,144 @@
                   <input class="visually-hidden filter-input-checkbox" type="checkbox" name="basket" id="here_basket">
                   <label class="filter-label filter-label-features" for="here_basket">Корзина</label>
                 </li>
+
               </ul>
             </fieldset>
             <button class="filter-button" type="submit">Показать</button>
-            </form>
+          </form>
           </section>
           <section class="catalog-projects">
-          <div class="catalog">
-          <div class="sort">
-            <span class="features-title">Сортировать:</span>
-             <ul class="filter-sort">
+            <div class="catalog">
+               <div class="sort">
+                <span class="features-title">Сортировать:</span>
 
-                <li class="filter-sort-item">
-                  <a class="filter-sort-list filter-sort-active" href="#">По цене</a>
-                </li>
-                <li class="filter-sort-item">
-                  <a class="filter-sort-list" href="#">По типу</a>
-                </li>
-                <li class="filter-sort-item">
-                  <a class="filter-sort-list" href="#">По названию</a>
-                </li>
+                  <ul class="filter-sort">
 
-              </ul>
-            <div class="filter-sort-order">
-              <a class="filter-down" href="#"></a>
-              <a class="filter-up" href="#"></a>
+                   <li class="filter-sort-item">
+                     <a class="filter-sort-list filter-sort-active" href="#">По цене</a>
+                   </li>
+                   <li class="filter-sort-item">
+                     <a class="filter-sort-list" href="#">По типу</a>
+                   </li>
+                   <li class="filter-sort-item">
+                     <a class="filter-sort-list" href="#">По названию</a>
+                   </li>
+
+                  </ul>
+                 <div class="filter-sort-order">
+                   <a class="filter-down" href="#"></a>
+                   <a class="filter-up" href="#"></a>
+                 </div>
+               </div>
+
+                <ul class="catalog-list">
+
+                 <li class="catalog-item" tabindex="0">
+                   <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
+                   </svg>
+                   <img class="catalog-item-img" src="img/sedona.png" width="359" height="578" alt="Sedona">
+                    <div class="grid-description">
+                      <a href="#">
+                        <h3 class="grid-header">Sedona</h3>
+                      </a>
+                      <p class="grid-description-details">Информационный сайт <br> для туристов</p>
+                      <a href="#" class="grid-price">9900 ₽</a>
+                    </div>
+                 </li>
+                 <li class="catalog-item" tabindex="0">
+                    <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
+                    </svg>
+                    <img class="catalog-item-img" src="img/pinkapp.png" width="358" height="578" alt="Pink APP">
+                     <div class="grid-description">
+                      <a href="#">
+                        <h3 class="grid-header">Pink app</h3>
+                      </a>
+                      <p class="grid-description-details">Продуктовый лендинг приложения для iOS и Android</p>
+                      <a href="#" class="grid-price">9900 ₽</a>
+                    </div>
+                 </li>
+                 <li class="catalog-item" tabindex="0">
+                    <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
+                   </svg>
+                   <img class="catalog-item-img" src="img/barbershop.png" width="358" height="578" alt="Barbershop">
+                   <div class="grid-description">
+                      <a href="#">
+                        <h3 class="grid-header">Barbershop</h3>
+                     </a>
+                     <p class="grid-description-details">Сайт салона красоты. <br> Для мужчин, да.</p>
+                     <a href="#" class="grid-price">9900 ₽</a>
+                   </div>
+                 </li>
+                 <li class="catalog-item" tabindex="0">
+                   <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
+                   </svg>
+                   <img class="catalog-item-img" src="img/mishka.png" width="359" height="578" alt="Mishka">
+                   <div class="grid-description">
+                     <a href="#">
+                       <h3 class="grid-header">Mishka</h3>
+                     </a>
+                     <p class="grid-description-details">Интернет-магазин <br> вязаных игрушек</p>
+                     <a href="#" class="grid-price">9900 ₽</a>
+                   </div>
+                 </li>
+                 <li class="catalog-item" tabindex="0">
+                   <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
+                   </svg>
+                   <img class="catalog-item-img" src="img/aplus.png" width="359" height="578" alt="APlus">
+                    <div class="grid-description">
+                      <a href="#">
+                       <h3 class="grid-header">A Plus</h3>
+                     </a>
+                      <p class="grid-description-details">Лендинг курсов повышения квалификации</p>
+                      <a href="#" class="grid-price">9900 ₽</a>
+                   </div>
+                 </li>
+                 <li class="catalog-item" tabindex="0">
+                   <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
+                   </svg>
+                   <img class="catalog-item-img" src="img/kvast.png" width="359" height="578" alt="kvast">
+                   <div class="grid-description">
+                     <a href="#">
+                       <h3 class="grid-header">Кваст</h3>
+                     </a>
+                     <p class="grid-description-details">Промо-сайт производителя крафтового кваса</p>
+                     <a href="#" class="grid-price">9900 ₽</a>
+                   </div>
+                 </li>
+
+                </ul>
+                <div class="pagination">
+                  <ul class="pagination">
+                    <li><a class="button btn-pagination active-pagination">1</a></li>
+                    <li><a class="button btn-pagination" href="#">2</a></li>
+                    <li><a class="button btn-pagination" href="#">3</a></li>
+                    <li><a class="button btn-pagination btn-pagination-big" href="#">Следующая</a></li>
+                  </ul>
+                </div>
             </div>
-          </div>
-
-            <ul class="catalog-list">
-
-              <li class="catalog-item" tabindex="0">
-                <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
-                </svg>
-                <img class="catalog-item-img" src="img/sedona.png" width="359" height="578" alt="Sedona">
-                <div class="grid-description">
-                  <a href="#">
-                    <h3 class="grid-header">Sedona</h3>
-                  </a>
-                  <p class="grid-description-details">Информационный сайт <br> для туристов</p>
-                  <a href="#" class="grid-price">9900 ₽</a>
-                </div>
-              </li>
-              <li class="catalog-item" tabindex="0">
-                <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
-                </svg>
-                <img class="catalog-item-img" src="img/pinkapp.png" width="358" height="578" alt="Pink APP">
-                <div class="grid-description">
-                  <a href="#">
-                    <h3 class="grid-header">Pink app</h3>
-                  </a>
-                  <p class="grid-description-details">Продуктовый лендинг приложения для iOS и Android</p>
-                  <a href="#" class="grid-price">9900 ₽</a>
-                </div>
-              </li>
-              <li class="catalog-item" tabindex="0">
-                <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
-                </svg>
-                <img class="catalog-item-img" src="img/barbershop.png" width="358" height="578" alt="Barbershop">
-                <div class="grid-description">
-                  <a href="#">
-                    <h3 class="grid-header">Barbershop</h3>
-                  </a>
-                  <p class="grid-description-details">Сайт салона красоты. <br> Для мужчин, да.</p>
-                  <a href="#" class="grid-price">9900 ₽</a>
-                </div>
-              </li>
-              <li class="catalog-item" tabindex="0">
-                <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
-                </svg>
-                <img class="catalog-item-img" src="img/mishka.png" width="359" height="578" alt="Mishka">
-                <div class="grid-description">
-                  <a href="#">
-                    <h3 class="grid-header">Mishka</h3>
-                  </a>
-                  <p class="grid-description-details">Интернет-магазин <br> вязаных игрушек</p>
-                  <a href="#" class="grid-price">9900 ₽</a>
-                </div>
-              </li>
-              <li class="catalog-item" tabindex="0">
-                <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
-                </svg>
-                <img class="catalog-item-img" src="img/aplus.png" width="359" height="578" alt="APlus">
-                <div class="grid-description">
-                  <a href="#">
-                    <h3 class="grid-header">A Plus</h3>
-                  </a>
-                  <p class="grid-description-details">Лендинг курсов повышения квалификации</p>
-                  <a href="#" class="grid-price">9900 ₽</a>
-                </div>
-              </li>
-              <li class="catalog-item" tabindex="0">
-                <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
-                </svg>
-                <img class="catalog-item-img" src="img/kvast.png" width="359" height="578" alt="kvast">
-                <div class="grid-description">
-                  <a href="#">
-                    <h3 class="grid-header">Кваст</h3>
-                  </a>
-                  <p class="grid-description-details">Промо-сайт производителя крафтового кваса</p>
-                  <a href="#" class="grid-price">9900 ₽</a>
-                </div>
-              </li>
-
-            </ul>
-            <div class="pagination">
-            <ul class="pagination">
-              <li><a class="button btn-pagination active-pagination">1</a></li>
-              <li><a class="button btn-pagination" href="#">2</a></li>
-              <li><a class="button btn-pagination" href="#">3</a></li>
-              <li><a class="button btn-pagination btn-pagination-big" href="#">Следующая</a></li>
-            </ul>
-            </div>
-          </div>
-        </section>>
-          <section class="map-container">
+         </section>
+       </div>
+        <section class="map map-container">
             <h2 class="visually-hidden">Наши контакты</h2>
-              <img src="img/map.png" width="1440" height="416" alt="Карта"> 
-            <div class="map-contacts">
+             <img src="img/map.png" width="1440" height="416" alt="Карта"> 
+              <div class="map-contacts">
                 <p class="company">NЁRDS DESIGN STUDIO</p>
                 <address class="address">191186, Санкт-Петербург, ул.&nbsp;Б. Конюшенная, д. 19/8</address>
                 <a class="telephone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
                 <a class="button button-open-form" href="form.html">НАПИШИТЕ НАМ</a>
-            </div>
-            <div class="interactive-map">
-              <a class="interactive-map-link-first" href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps">Санкт‑Петербург</a>
-              <a class="interactive-map-link-second" href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.322117%2C59.938659&utm_medium=mapframe&utm_source=maps&z=18.39">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a>
-              <iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/-/CCUMJAbbxD" width="560" height="416"></iframe>
-            </div>
-            </section>
+              </div>
+              <div class="interactive-map">
+               <a class="interactive-map-link-first" href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps">Санкт‑Петербург</a>
+               <a class="interactive-map-link-second" href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.322117%2C59.938659&utm_medium=mapframe&utm_source=maps&z=18.39">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a>
+               <iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/-/CCUMJAbbxD" width="560" height="416"></iframe>
+             </div>
+          </section>
         </main>
   
           <footer class="main-footer">
@@ -272,14 +280,14 @@
                       <a class="footer-contacts-list-icon" href="https://ru-ru.facebook.com/#"><span class="visually-hidden">Вконтакте</span> 
                         <svg width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983 21.348 14.983L24.821 14.933C24.821 14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275 12.31 23.193 10.357C21.016 8.31404 21.311 8.64504 23.932 5.11304C25.529 2.96004 26.168 1.64504 25.968 1.08504C25.776 0.546037 24.603 0.686037 24.603 0.686037L20.69 0.713037C20.309 0.714037 19.986 0.832037 19.839 1.22804C19.836 1.23204 19.218 2.89404 18.394 4.30704C16.653 7.29604 15.958 7.45504 15.67 7.26804C15.009 6.83504 15.176 5.53104 15.176 4.60404C15.176 1.70704 15.608 0.499037 14.33 0.187037C13.903 0.0830374 13.591 0.0150374 12.502 0.00503741C11.11 -0.0159626 9.92797 0.00503743 9.25797 0.334037C8.81297 0.557037 8.47197 1.04604 8.67897 1.07404C8.93897 1.10904 9.52197 1.23404 9.83397 1.66004C10.235 2.21204 10.223 3.44904 10.223 3.44904C10.223 3.44904 10.452 6.86004 9.68297 7.28304C9.15497 7.57304 8.43297 6.98104 6.87997 4.26704C6.08697 2.87904 5.48797 1.34504 5.48797 1.34504C5.48797 1.34504 5.37197 1.06004 5.16197 0.904037C4.91197 0.719037 4.56197 0.660037 4.56197 0.660037L0.84797 0.684037C0.84797 0.684037 0.28997 0.700037 0.0849697 0.946037C-0.0970303 1.16404 0.0699697 1.61404 0.0699697 1.61404C0.0699697 1.61404 2.97897 8.49504 6.27297 11.961C9.29297 15.143 12.725 14.932 12.725 14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38 15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z" fill="white"/>
-                          </svg>                    
+                        </svg>                    
                       </a>
                     </li>
                     <li class="footer-contacts-list">
                       <a class="footer-contacts-list-icon" href="https://ru-ru.facebook.com/#"><span class="visually-hidden">Фэйсбук</span>
                         <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
-                          </svg>
+                        </svg>
                       </a>
                     </li>
                     <li class="footer-contacts-list">
@@ -301,23 +309,23 @@
           </footer>
           <section class="modal modal-feedback">
             <h2 class="feedback-header">Напишите нам</h2>
-            <form class="container-form" action="https://echo.htmlacademy.ru/" method="POST">
-              <div class="form-item">
-                <p>
-                  <label for="name" class="feedback-ladel">Ваше имя:</label> <br>
-                  <input class="feedback-input-name" type="text" name="name" id="name" placeholder="Имя Фамилия" required>
-                </p>
-                <p>
-                  <label for="mail" class="feedback-ladel">Ваш email:</label> <br>
-                  <input class="feedback-input-email" type="email" name="mail" id="mail" placeholder="email@example.com" required>
-                </p>
-              </div>
-              <p>
-                <label for="comment" class="feedback-ladel">Текст письма:</label> <br>
-                <textarea class="feedback-input-text" name="comment" id="comment" cols="250" rows="5" placeholder="В свободной форме" ></textarea>
-              </p>
-              <input type="submit" class="feedback-button" value="Отправить">
-              <button class="modal-close"><span class="visually-hidden">Закрыть окно</span></button>
+              <form class="container-form" action="https://echo.htmlacademy.ru/" method="POST">
+                <div class="form-item">
+                  <p>
+                   <label for="name" class="feedback-ladel">Ваше имя:</label> <br>
+                   <input class="feedback-input-name" type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+                  </p>
+                  <p>
+                   <label for="mail" class="feedback-ladel">Ваш email:</label> <br>
+                   <input class="feedback-input-email" type="email" name="mail" id="mail" placeholder="email@example.com" required>
+                  </p>
+                </div>
+                  <p>
+                   <label for="comment" class="feedback-ladel">Текст письма:</label> <br>
+                   <textarea class="feedback-input-text" name="comment" id="comment" cols="250" rows="5" placeholder="В свободной форме" ></textarea>
+                  </p>
+                <input type="submit" class="feedback-button" value="Отправить">
+                <button class="modal-close"><span class="visually-hidden">Закрыть окно</span></button>
             </form>
           </section>
     </body>
