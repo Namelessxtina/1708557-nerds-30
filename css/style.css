@@ -1174,7 +1174,7 @@ img {
   color: var(--basic-light-gray);
   background-color: var(--basic-dark-white);
   text-align: center;
-  top: 387px;
+  bottom: 0px;
   display: none;
 }
 
