@@ -153,6 +153,7 @@ img {
   width: min-content;
   padding: 0;
 }
+
 .active::after {
   content: "";
   position: absolute;
@@ -163,6 +164,13 @@ img {
   height: 2px;
   border-bottom: 2px solid var(--basic-light-red);
 }
+
+.nav-item a:not([href]):hover, 
+.nav-item a:not([href]):focus, 
+.nav-item a:not([href]):active {
+  color: var(--basic-black);
+}
+
 .main-catalog {
   margin-left: 4px;
 }
@@ -185,6 +193,7 @@ img {
 .nav-item-link:active, 
 .cart:active {
   color: var(--basic-soft-gray);
+  border-bottom: 2px solid var(--basic-light-red);
 }
 
 .inner-page .user-navigation {
@@ -626,6 +635,7 @@ img {
   object-fit: cover;
 }
 .map-contacts {
+  padding: 32px 10px 46px;
   position: absolute;
   top: 13%;
   left: 19.5%;
@@ -637,6 +647,7 @@ img {
   align-items: flex-start;
   flex-wrap: wrap;
   background-color: var(--basic-white);
+  box-sizing: border-box; 
 }
 .company {
   margin: 0;
